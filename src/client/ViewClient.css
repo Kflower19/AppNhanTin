@@ -1,0 +1,163 @@
+.root{
+	-fx-background-color:#ADD8E6;
+}
+
+#buttonGuiTinNhan {
+    -fx-background-color: #4A90E2; /* Màu xanh dương đậm (hài hòa với nền #ADD8E6) */
+    -fx-text-fill: white; /* Màu chữ trắng */
+    -fx-font-size: 16px;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-padding: 10 20; /* Khoảng cách bên trong nút */
+    -fx-background-radius: 12; /* Bo tròn góc */
+    -fx-cursor: hand; /* Đổi con trỏ khi di chuột qua */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 5, 0.5, 0, 3); /* Bóng đổ nhẹ */
+    -fx-transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động nhẹ */
+}
+
+#buttonGuiTinNhan:hover {
+    -fx-background-color: #357ABD; /* Màu khi hover (tối hơn một chút) */
+}
+
+#buttonGuiTinNhan:pressed {
+    -fx-background-color: #2A6BA1; /* Màu khi nhấn vào (tối nhất) */
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.5), 5, 0.5, 0, 3); /* Hiệu ứng bóng khi nhấn */
+}
+
+
+/* Áp dụng cho ComboBox */
+#comboBox {
+    -fx-background-color: #ffffff; /* Màu nền trắng */
+    -fx-border-color: #4CAF50; /* Màu viền xanh lá cây */
+    -fx-border-radius: 5; /* Bo tròn các góc của ComboBox */
+    -fx-padding: 5 10; /* Khoảng cách giữa chữ và viền của ComboBox */
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-font-family: "Arial"; /* Font chữ */
+    -fx-text-fill: #333333; /* Màu chữ tối */
+    -fx-cursor: hand; /* Đổi con trỏ thành tay khi di chuột qua */
+    -fx-transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động nhẹ */
+}
+
+/* Khi di chuột qua ComboBox */
+#comboBox:hover {
+    -fx-border-color: #45a049; /* Viền màu xanh lá cây đậm khi hover */
+    -fx-background-color: #f1f1f1; /* Màu nền sáng hơn khi hover */
+}
+
+/* Khi nhấn vào ComboBox */
+#comboBox:pressed {
+    -fx-border-color: #388e3c; /* Viền màu xanh lá cây đậm hơn khi nhấn */
+    -fx-background-color: #e8e8e8; /* Màu nền khi nhấn vào */
+}
+
+/* Khi ComboBox đã được chọn */
+#comboBox .arrow {
+    -fx-background-color: #4CAF50; /* Màu của mũi tên (arrow) */
+    -fx-border-radius: 5;
+}
+
+/* ComboBox khi đã có lựa chọn */
+#comboBox .list-cell {
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #333333;
+}
+
+/* Khi di chuột qua các mục trong list */
+#comboBox .list-cell:hover {
+    -fx-background-color: #e0e0e0; /* Màu nền mục khi hover */
+    -fx-text-fill: #4CAF50; /* Màu chữ thay đổi khi hover */
+}
+
+/* Thêm hiệu ứng cho promptText */
+#comboBox .prompt-text {
+    -fx-text-fill: rgba(0, 0, 0, 0.5); /* Màu chữ mờ (placeholder) */
+    -fx-font-size: 14px; /* Kích thước chữ cho dòng chữ mờ */
+    -fx-font-family: "Arial"; /* Font chữ cho dòng chữ mờ */
+    -fx-font-style: italic; /* Kiểu chữ nghiêng cho dòng chữ mờ */
+}
+
+/* Thay đổi màu chữ của promptText khi hover */
+#comboBox:hover .prompt-text {
+    -fx-text-fill: #45a049; /* Màu chữ promptText thay đổi khi hover */
+}
+
+#labelTenNguoiDung {
+    -fx-font-size: 14px; /* Kích thước chữ */
+    -fx-font-family: "Arial"; /* Font chữ */
+    -fx-font-weight: bold; /* Đậm chữ */
+    -fx-text-fill: #007ACC; /* Màu chữ xanh dương đậm hơn */
+    -fx-background-color: transparent; /* Không có màu nền cho Label */
+    -fx-padding: 10 20; /* Khoảng cách giữa viền và chữ */
+    
+    -fx-alignment: center-left; /* Căn lề trái cho tên người dùng */
+    -fx-transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động nhẹ */
+    
+    /* Thêm khung cho Label */
+    -fx-border-color: #4A90E2; /* Màu viền xanh dương đậm */
+    -fx-border-width: 2px; /* Độ dày của viền */
+    -fx-border-radius: 8px; /* Bo góc viền */
+}
+
+/* Khi di chuột qua Label (hiệu ứng hover) */
+#labelTenNguoiDung:hover {
+    -fx-text-fill: #00A9E0; /* Màu chữ sáng hơn khi hover */
+    -fx-font-size: 20px; /* Tăng kích thước chữ khi hover */
+    -fx-border-color: #357ABD; /* Màu viền đổi khi hover */
+}
+
+#labelTroChuyenTrucTuyen {
+    -fx-font-size: 18px; /* Kích thước chữ */
+    -fx-font-family: "Arial"; /* Font chữ */
+    -fx-font-weight: bold; /* Chữ đậm */
+    -fx-text-fill: #003366; /* Màu chữ tối */
+    -fx-background-color: transparent; /* Không có nền cho Label */
+    -fx-padding: 10px; /* Khoảng cách giữa viền và chữ */
+    -fx-cursor: hand; /* Thay đổi con trỏ khi di chuột qua Label */
+    -fx-transition: all 0.3s ease; /* Hiệu ứng chuyển động nhẹ */
+}
+
+/* Khi di chuột qua Label */
+#labelTroChuyenTrucTuyen:hover {
+    -fx-text-fill: #00A9E0; /* Màu chữ sáng hơn khi hover */
+    -fx-font-size: 20px; /* Tăng kích thước chữ khi hover */
+    -fx-opacity: 0.9; /* Thêm hiệu ứng mờ khi hover */
+}
+
+/* Khi Label có focus (chọn vào) */
+#labelTroChuyenTrucTuyen:focused {
+    -fx-text-fill: #4A90E2; /* Màu chữ xanh khi focus */
+    -fx-font-size: 20px; /* Tăng kích thước chữ khi focus */
+    -fx-opacity: 1; /* Đảm bảo độ sáng đầy đủ khi focus */
+}
+
+#textArea {
+    -fx-font-size: 18px; /* Kích thước chữ lớn hơn */
+    -fx-font-family: "Arial"; /* Font chữ */
+    -fx-font-weight: bolder; /* Chữ đậm */
+    -fx-text-fill: #333333; /* Màu chữ tối */
+    -fx-background-color: #F5F5F5; /* Màu nền sáng cho TextArea */
+    -fx-border-color: #A1A1A1; /* Màu viền xám */
+    -fx-border-width: 1px; /* Độ dày viền */
+    -fx-border-radius: 5px; /* Bo tròn các góc của viền */
+    -fx-padding: 10px; /* Khoảng cách giữa chữ và viền */
+    -fx-cursor: text; /* Hiển thị con trỏ text khi click vào */
+    -fx-transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động nhẹ */
+}
+
+/* Khi di chuột qua TextArea */
+#textArea:hover {
+    -fx-background-color: #EAEAEA; /* Màu nền sáng hơn khi hover */
+    -fx-border-color: #A8A8A8; /* Màu viền sáng hơn khi hover */
+}
+
+/* Khi TextArea có focus (chọn vào) */
+#textArea:focused {
+    -fx-border-color: #4A90E2; /* Màu viền xanh khi focus */
+    -fx-background-color: #FFFFFF; /* Màu nền trắng khi focus */
+}
+
+
+
+
+

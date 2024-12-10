@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="648.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.ClientController">
+   <children>
+      <Label id="labelTenNguoiDung" fx:id="labelBan" layoutX="401.0" layoutY="4.0" prefHeight="40.0" prefWidth="178.0" text="Bạn" />
+      <TextArea id="textArea" fx:id="textAreaTrucTuyen" layoutX="3.0" layoutY="49.0" prefHeight="263.0" prefWidth="184.0" />
+      <TextArea id="textArea" fx:id="textAreaNoiDung" layoutX="195.0" layoutY="49.0" prefHeight="263.0" prefWidth="442.0" />
+      <ComboBox id="comboBox" fx:id="comboBoxChonNguoiNhan" layoutX="3.0" layoutY="320.0" prefHeight="26.0" prefWidth="184.0" promptText="Chọn người gửi" />
+      <TextField id="textArea" fx:id="textFieldSoanThao" layoutX="195.0" layoutY="321.0" prefHeight="43.0" prefWidth="261.0" promptText="Nhập nội dung . . ." />
+      <Button id="buttonGuiTinNhan" layoutX="461.0" layoutY="319.0" mnemonicParsing="false" onAction="#hangDongGui" prefHeight="40.0" prefWidth="82.0" text="GỬI" />
+      <Label id="labelTroChuyenTrucTuyen" layoutX="10.0" layoutY="6.0" text="Trực Tuyến" />
+      <Label id="labelTroChuyenTrucTuyen" layoutX="195.0" layoutY="5.0" text="Trò Chuyện" />
+      <Button id="buttonGuiTinNhan" layoutX="560.0" layoutY="319.0" mnemonicParsing="false" onAction="#chonVaGuiAnh" text="Ảnh" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="358.0" prefWidth="487.0" styleClass="labelDangNhap" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="server.DieuKhienServer">
+   <children>
+      <TextArea id="textArea" fx:id="textAreaThongBao" layoutX="21.0" layoutY="71.0" prefHeight="272.0" prefWidth="452.0" />
+      <Label id="labelDangNhap" layoutX="71.0" layoutY="18.0" text="Hoạt Động Trên Server" />
+   </children>
+</AnchorPane>

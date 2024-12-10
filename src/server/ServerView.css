@@ -1,0 +1,20 @@
+.root{
+	-fx-background-color: #0091FF;
+}
+
+#labelDangNhap {
+    -fx-font-family: "Times New Roman";
+    -fx-font-size: 35px;
+    -fx-font-style: normal; /* Bỏ kiểu chữ nghiêng */
+    -fx-font-weight: bolder;
+    -fx-alignment: center;
+    -fx-text-fill: white; /* Đặt màu chữ là màu trắng */
+}
+
+#textArea {
+	-fx-font-family: "Times New Roman";
+    	-fx-font-size: 15px;
+    	-fx-font-style: normal;
+    	-fx-font-weight: lighter;
+    	-fx-alignment: center-left;
+}
